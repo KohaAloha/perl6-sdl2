@@ -37,7 +37,7 @@ before_install:
                                 
             choco install rakudostar wget ;
             SET SDL2_ARCHIVE=SDL2-2.0.8-win32-x64.zip ;
-            cd ;
+            cd %TRAVIS_BUILD_DIR%
             wget https://libsdl.org/release/%SDL2_ARCHIVE% ;
             7z x %SDL2_ARCHIVE% ;
             refreshenv ; fi
