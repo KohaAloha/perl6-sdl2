@@ -1,4 +1,6 @@
-language: generic
+language: perl6
+perl6:
+  - latest
 
 os:
   - linux
