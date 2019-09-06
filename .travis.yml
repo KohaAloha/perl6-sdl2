@@ -47,4 +47,5 @@ before_install:
 
 install:
   - zef --version
+  - zef info zef
   - zef install . && zef test . --verbose
