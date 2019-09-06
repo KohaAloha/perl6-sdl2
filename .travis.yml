@@ -1,5 +1,4 @@
-language: generic
-#language: perl6
+language: perl6
 perl6:
   - latest
 
