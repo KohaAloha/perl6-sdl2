@@ -30,12 +30,12 @@ before_install:
   - if [ "$TRAVIS_OS_NAME" == "linux" ]; then zef --version                                      ; fi
 
   # macOS rakudo-star and sdl2 installation
-  - if [ "$TRAVIS_OS_NAME" == "osx"   ]; then brew update                              ; fi
+  - if [ "$TRAVIS_OS_NAME" == "osx"   ]; then brew update ; fi
   - if [ "$TRAVIS_OS_NAME" == "osx"   ]; then brew install rakudo-star sdl2 pkg-config ; fi
   - if [ "$TRAVIS_OS_NAME" == "osx"   ]; then git clone https://github.com/ugexe/zef.git ; fi
   - if [ "$TRAVIS_OS_NAME" == "osx"   ]; then cd zef ; fi
   - if [ "$TRAVIS_OS_NAME" == "osx"   ]; then perl6 -I. bin/zef install . ; fi
-  - if [ "$TRAVIS_OS_NAME" == "osx"   ]; then zef --version                                      ; fi
+  - if [ "$TRAVIS_OS_NAME" == "osx"   ]; then zef --version ; fi
 
   - if [ "$TRAVIS_OS_NAME" == "windows"   ]; then             choco install rakudostar wget 7zip ; fi
   - if [ "$TRAVIS_OS_NAME" == "windows"   ]; then             SET SDL2_ARCHIVE=SDL2-2.0.8-win32-x64.zip ; fi
