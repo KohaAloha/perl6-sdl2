@@ -19,6 +19,7 @@ install:
   - 7z x %SDL2_ARCHIVE%
   # Refresh environment variables so zef works
   - refreshenv
+  - zef --version
 
 build: off
 
