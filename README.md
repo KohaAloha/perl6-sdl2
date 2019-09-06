@@ -52,7 +52,7 @@ More examples can be found in [`examples`](examples/) folder.
 Please see [`SDL2::Raw`](https://github.com/timo/SDL2_raw-p6/) for `libsdl2` platform dependencies.
 
 ```
-$ zef install sdl2
+$ zef install SDL2
 ```
 
 ## Testing
