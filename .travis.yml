@@ -45,7 +45,11 @@ before_install:
   - if [ "$TRAVIS_OS_NAME" == "windows"   ]; then             wget https://libsdl.org/release/$SDL2_ARCHIVE ; fi
   - if [ "$TRAVIS_OS_NAME" == "windows"   ]; then             7z x $SDL2_ARCHIVE ; fi
   - if [ "$TRAVIS_OS_NAME" == "windows"   ]; then             choco install rakudostar ; fi
-  - if [ "$TRAVIS_OS_NAME" == "windows"   ]; then             zef --version ; fi
+  - if [ "$TRAVIS_OS_NAME" == "windows"   ]; then git clone https://github.com/ugexe/zef.git ; fi
+  - if [ "$TRAVIS_OS_NAME" == "windows"   ]; then cd zef ; fi
+  - if [ "$TRAVIS_OS_NAME" == "windows"   ]; then perl6 -I. bin/zef install . ; fi
+  - if [ "$TRAVIS_OS_NAME" == "windows"   ]; then zef --version ; fi
+
 
 install:
   - zef --version
