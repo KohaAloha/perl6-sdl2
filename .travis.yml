@@ -1,4 +1,4 @@
-language: perl6
+language: shell
 perl6:
   - latest
 
