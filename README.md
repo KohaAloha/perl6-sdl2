@@ -1,6 +1,6 @@
 # SDL2
 
- [![Build Status](https://travis-ci.org/azawawi/perl6-sdl2.svg?branch=master)](https://travis-ci.org/azawawi/perl6-sdl2) [![Build status](https://ci.appveyor.com/api/projects/status/github/azawawi/perl6-sdl2?svg=true)](https://ci.appveyor.com/project/azawawi/perl6-sdl2/branch/master)
+ [![Build Status](https://travis-ci.org/kohaaloha/perl6-sdl2.svg?branch=master)](https://travis-ci.org/kohaaloha/perl6-sdl2) [![Build status](https://ci.appveyor.com/api/projects/status/github/kohaaloha/perl6-sdl2?svg=true)](https://ci.appveyor.com/project/kohaaloha/perl6-sdl2/branch/master)
 
 This module adds some OO-sugar on top of [`SDL2::Raw`](https://github.com/timo/SDL2_raw-p6/).
 
