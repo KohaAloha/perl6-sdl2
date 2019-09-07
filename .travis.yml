@@ -34,12 +34,12 @@ before_install:
   # macOS rakudo-star and sdl2 installation
   - if [ "$TRAVIS_OS_NAME" == "osx"   ]; then brew update ; fi
   - if [ "$TRAVIS_OS_NAME" == "osx"   ]; then brew install rakudo-star sdl2 pkg-config ; fi
-  - if [ "$TRAVIS_OS_NAME" == "osx"   ]; then git clone https://github.com/ugexe/zef.git ; fi
-  - if [ "$TRAVIS_OS_NAME" == "osx"   ]; then cd zef ; fi
-  - if [ "$TRAVIS_OS_NAME" == "osx"   ]; then perl6 -I. bin/zef install . ; fi
-  - if [ "$TRAVIS_OS_NAME" == "osx"   ]; then zef --version ; fi
-  - if [ "$TRAVIS_OS_NAME" == "osx"   ]; then pwd ; fi
-  - if [ "$TRAVIS_OS_NAME" == "osx"   ]; then cd .. ; fi
+#  - if [ "$TRAVIS_OS_NAME" == "osx"   ]; then git clone https://github.com/ugexe/zef.git ; fi
+#  - if [ "$TRAVIS_OS_NAME" == "osx"   ]; then cd zef ; fi
+#  - if [ "$TRAVIS_OS_NAME" == "osx"   ]; then perl6 -I. bin/zef install . ; fi
+#  - if [ "$TRAVIS_OS_NAME" == "osx"   ]; then zef --version ; fi
+#  - if [ "$TRAVIS_OS_NAME" == "osx"   ]; then pwd ; fi
+#  - if [ "$TRAVIS_OS_NAME" == "osx"   ]; then cd .. ; fi
 
 #  - if [ "$TRAVIS_OS_NAME" == "windows"   ]; then             wget -O /c/TEMP/ref.sh https://gist.githubusercontent.com/jayvdb/1daf8c60e20d64024f51ec333f5ce806/raw/a42f930a940597750fd29548d13b2b538d7508c2/RefreshEnv.sh ; fi
 
