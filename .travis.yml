@@ -57,11 +57,7 @@ before_install:
   - if [ "$TRAVIS_OS_NAME" == "windows"   ]; then /c/rakudo/bin/perl6  -I. bin/zef install . ; fi
 #  - if [ "$TRAVIS_OS_NAME" == "windows"   ]; then perl6  -I. bin/zef install . ; fi
 #  - if [ "$TRAVIS_OS_NAME" == "windows"   ]; then perl6  -I. bin/zef install . ; fi
-  - if [ "$TRAVIS_OS_NAME" == "windows"   ]; then zef --version ; fi
-  - if [ "$TRAVIS_OS_NAME" == "windows"   ]; then             refreshenv ; fi
 
 
 install:
-  - zef --version
-  - zef info zef
-  - zef install . && zef test . --verbose
+  - /c/rakudo/share/perl6/site/bin/zef install . && zef test . --verbose
