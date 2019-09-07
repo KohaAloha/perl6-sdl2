@@ -9,7 +9,7 @@ os:
 
 env:
   global:
-    - export PATH="/opt/rakudo-pkg/bin:/c/rakudo/bin:/opt/rakudo-pkg/share/perl6/site/bin:$PATH"
+    - export PATH="/opt/rakudo-pkg/bin:/c/rakudo/bin:/rakudo/bin:/opt/rakudo-pkg/share/perl6/site/bin:$PATH"
     - export FOO="zz"
     - export SDL2_ARCHIVE="SDL2-2.0.8-win32-x64.zip"
 addons:
