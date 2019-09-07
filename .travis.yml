@@ -61,4 +61,5 @@ before_install:
 
 
 install:
-  - /c/rakudo/share/perl6/site/bin/zef install . && zef test . --verbose
+#  - /c/rakudo/share/perl6/site/bin/zef install . && zef test . --verbose
+  - zef install . && zef test . --verbose
