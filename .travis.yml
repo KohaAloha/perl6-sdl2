@@ -45,6 +45,7 @@ before_install:
   - if [ "$TRAVIS_OS_NAME" == "windows"   ]; then             wget https://libsdl.org/release/$SDL2_ARCHIVE ; fi
   - if [ "$TRAVIS_OS_NAME" == "windows"   ]; then             7z x $SDL2_ARCHIVE ; fi
   - if [ "$TRAVIS_OS_NAME" == "windows"   ]; then             choco install rakudostar ; fi
+  - if [ "$TRAVIS_OS_NAME" == "windows"   ]; then             bash ; fi
   - if [ "$TRAVIS_OS_NAME" == "windows"   ]; then             which perl6 ; fi
   - if [ "$TRAVIS_OS_NAME" == "windows"   ]; then             source ; fi
   - if [ "$TRAVIS_OS_NAME" == "windows"   ]; then             which perl6 ; fi
