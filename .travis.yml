@@ -5,7 +5,7 @@ perl6:
 os:
   - linux
   - osx
-#  - windows
+  - windows
 
 env:
   global:
